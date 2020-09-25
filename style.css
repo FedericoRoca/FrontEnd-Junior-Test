@@ -47,8 +47,18 @@
     animation-name: right;
     animation-duration: 2s;
 }
-
-
+.arrow:before {
+    content:"";
+    position: absolute;
+    top: 100%;
+    /* top: 0px;
+    width: 0;
+    height: 0; */
+    right: 50px;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    border-top: 13px solid   #343a40;
+}
 @keyframes top
 {
     0%{
