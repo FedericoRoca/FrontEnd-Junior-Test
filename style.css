@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Karla', sans-serif;
+}
+
+.h4{
+    font-weight: 300;
+}
+.button-size 
+{
+    width: 100%;
+}
+.orange
+{
+    color: orangered;
+}
+.bg-orange
+{
+    background: orangered;
+}
+
+/*Animations*/
+/*From top to center*/
+.top
+{
+    position: relative;
+    top:0px;
+    animation-name: top;
+    animation-duration: 2s;
+}
+/*From left to center*/
+.left
+{
+    position: relative;
+    left:0px;
+    bottom: 0px;
+    animation-name: left;
+    animation-duration: 2s;
+}
+/*From right to center*/
+.right
+{
+    position: relative;
+    right:0px;
+    bottom: 0px;
+    animation-name: right;
+    animation-duration: 2s;
+}
+
+
+@keyframes top
+{
+    0%{
+        top: -500px;
+    }    
+    100%
+    {
+        top: 0px;
+    }
+}
+@keyframes left
+{
+    0%{
+        left: -500px;
+        bottom: -500px;
+    }    
+    100%
+    {
+        left: 0px;
+        bottom: 0px;
+    }
+}
+@keyframes right
+{
+    0%{
+        right: -500px;
+        bottom: -500px;
+    }    
+    100%
+    {
+        right: 0px;
+        bottom: 0px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Front-end Test</title>
+</head>
+<body >
+<section class="container-fluid " style="width: 450px;">
+    <div class="bg-dark text-center text-white mt-5 p-3 mb-4 rounded top" >
+        <p class="h4"><b id="remainingMoneyText">$10000</b> still needed for this project</p>
+    </div>
+
+    <!--Main Box-->
+    <div class="border shadow-sm mb-3 top">
+            <!--Progress Bar-->
+            <div class="progress " style="width: 100%;">
+                <div class="progress-bar bg-orange" id="modBarra" role="progressbar" style="width: 0%" aria-valuenow="0"  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            <!--Text-->
+        <div class="pr-5 pl-3 ">
+            <p class="mb-4 ml-3 mt-3"><b class="orange">Only 3 days left </b> to fund this project</p>
+
+            <p class="ml-3 " id="finalText">Join the <b id="donorsText">0</b> other donors who have already support this project. Every dollar helps</p>
+        </div>
+            <!--Form-->
+        <form class="form-inline pr-5 pl-3" onSubmit="return false;">
+                <div class="form-group mx-sm-3 mb-2 ml-3">
+                  <input type="text" class="form-control " id="amountEntered"  placeholder="$50">
+                </div>
+                <button type="button" class="btn btn-success mb-2" onclick="increase()">Give Now</button>
+        </form>
+        <div class="ml-3 mb-3 pr-5 pl-3">
+            <a href="https://www.thelifeyoucansave.org/why-donate/" target="_blank">Why give $50?</a>
+        </div>
+    </div>
+        <!--Buttons-->
+        <div class="row " >
+            <div class="col-md-6 col-xs-12">
+                <button class="button-size btn btn-light border shadow-sm left" data-toggle="modal" data-target="#exampleModal">Save for later</button>
+            </div>
+            <div class="col-md-6 col-xs-12 d-flex justify-content-end">
+                <button class="button-size btn btn-light border shadow-sm right" onclick="tellFriends()">Tell your friends</button>
+            </div>
+        </div>
+   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">I hope to see you again!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         You can add this page to your bookmarks by pressing CTRL+D
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-orange text-white" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+  <!-- Scripts -->
+    <script src="animation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
