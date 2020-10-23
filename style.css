@@ -1,95 +1,101 @@
-*{
-    padding:0;
-    margin:0;
-    font-family: 'Karla', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
 }
-
-.h4{
-    font-weight: 300;
+.contenedor {
+  width: 30%;
 }
-.button-size 
-{
-    width: 100%;
+.h4 {
+  font-weight: 300;
 }
-.orange
-{
-    color: orangered;
+.button-size {
+  width: 100%;
 }
-.bg-orange
-{
-    background: orangered;
+.orange {
+  color: orangered;
+}
+.bg-orange {
+  background: orangered;
 }
 
 /*Animations*/
 /*From top to center*/
-.top
-{
-    position: relative;
-    top:0px;
-    animation-name: top;
-    animation-duration: 2s;
+.top {
+  position: relative;
+  top: 0px;
+  animation-name: top;
+  animation-duration: 2s;
 }
 /*From left to center*/
-.left
-{
-    position: relative;
-    left:0px;
-    bottom: 0px;
-    animation-name: left;
-    animation-duration: 2s;
+.left {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  animation-name: left;
+  animation-duration: 2s;
 }
 /*From right to center*/
-.right
-{
-    position: relative;
-    right:0px;
-    bottom: 0px;
-    animation-name: right;
-    animation-duration: 2s;
+.right {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  animation-name: right;
+  animation-duration: 2s;
 }
 .arrow:before {
-    content:"";
-    position: absolute;
-    top: 100%;
-    /* top: 0px;
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* top: 0px;
     width: 0;
     height: 0; */
-    right: 50px;
-    border-left: 15px solid white;
-    border-right: 15px solid white;
-    border-top: 13px solid   #343a40;
+  right: 50px;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  border-top: 13px solid #343a40;
 }
-@keyframes top
-{
-    0%{
-        top: -500px;
-    }    
-    100%
-    {
-        top: 0px;
-    }
+@keyframes top {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 0px;
+  }
 }
-@keyframes left
-{
-    0%{
-        left: -500px;
-        bottom: -500px;
-    }    
-    100%
-    {
-        left: 0px;
-        bottom: 0px;
-    }
+@keyframes left {
+  0% {
+    left: -500px;
+    bottom: -500px;
+  }
+  100% {
+    left: 0px;
+    bottom: 0px;
+  }
 }
-@keyframes right
-{
-    0%{
-        right: -500px;
-        bottom: -500px;
-    }    
-    100%
-    {
-        right: 0px;
-        bottom: 0px;
-    }
+@keyframes right {
+  0% {
+    right: -500px;
+    bottom: -500px;
+  }
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contenedor {
+    text-align: center;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contenedor {
+    width: 80%;
+  }
 }
